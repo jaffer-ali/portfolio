@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="jaffer" content="jaffer's portfolio">
+  <meta name="jaffer's portfolio" content="jaffer's portfolio">
+  <!--
+    `og` stands for Open Graph, which is a protocol for how your
+    website appears when linked to from another site. These tags
+    are critical to ensuring your site gains an appropriate card
+    when sharing on social media.
+  -->
+  <meta property="og:title" content="Jaffer Ali">
+  <meta property="og:description" content="Jaffer's portfolio">
+  <meta property="og:image" content="/some-image.png">
+  <meta property="og:url" content="/this-page.html">
+  <meta property="og:site_name" content="Your Site Name">
+  <link href="style.css" rel="stylesheet">
+  <!--
+    A favicon is the small picture that shows up in the browser's
+    tab. Historically, these used a proprietary ".ico" format, and
+    you needed to provide many different sizes.
+    Happily, you can now provide a single vector graphic in SVG
+    format. It will scale to any size, and still look crisp.
+  -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <!-- This title shows up in the page's tab, next to the favicon -->
+  <title>Jaffer Ali</title>
+</head>
+<body>
+  <!-- Page 1 -->
+  <div class="page" id="page1">
+    <div class="landingpagebit">
+      <h1>Hey! I'm Jaffer.</h1>
+      <p>
+        I'm a mechanical engineering graduate
+        looking for jobs in the Bay Area. I've
+        worked on just about everything, like... 
+        <span class="text-container">
+          <span class="text-change">Brain Implants</span>
+        </span>
+      </p>
+      <p>
+        Want to get in touch? Contact me on 
+        <a href="https://www.linkedin.com/in/jaffer-ali-060b93190/" target="_blank">
+          <img class="inlineimg" src="assets/linkedin.svg" alt="LinkedIn"/>
+        </a>
+      </p>
+    </div>
+  </div>
+  <div class="page page2">
+    <h1 class="contentheading"> 
+      I Specialize in Design, Simulation, and Manufacturing
+    </h1>
+    <div class="page2text">
+      <h2>
+        Design
+      </h2>
+      <p>
+        Over the past four years, I've designed hundreds of parts including
+        CNC-machined and snap-fit injection-molded components, As well as
+        simpler 3D printed and lasercut parts.
+      </p>
+      <h2>
+        Simulation
+      </h2>
+      <p>
+        From using topology optimization to lightweight parts to using structural
+        simulations to narrow down snap fits, I simulate and validate all my
+        components in FEA.
+      </p>
+      <h2>
+        Manufacturing
+      </h2>
+      <p>
+        I've written CAM in HSM and Mastercam for dozens of complex
+        multi-fixture components in materials like titanium and stainless. I also
+        have mass-production experience working with overseas suppliers at
+        Apple.
+      </p>
+    </div>
+    <img id="simulation" src="assets/page2asset.gif" alt="structural simulation"/>
+  </div>
+  <div class="">
+    <h1 class="contentheading">
+      I've interned at a wide range of companies
+    </h1>
+    <div class="page3text">
+      <div class="company">
+        <img src="assets/neuralink_logo.jpeg" alt="neuralink logo">
+        <div class="description">
+          <h2>Neuralink - Mechanical Engineer</h2>
+          <p>Jun 2024 - Aug 2024</p>
+          <p>Austin, Texas</p>
+        </div>
+      </div>
+      <div class="company">
+        <img src="assets/apple_logo.jpeg" alt="apple logo">
+        <div class="description">
+          <h2>Apple - Manufacturing Design Engineer</h2>
+          <p>May 2023 - Jan 2024</p>
+          <p>Cupertino, California</p>
+        </div>
+      </div>
+      <div class="company">
+        <img src="assets/andurilindustries_logo.jpeg" alt="anduril logo">
+        <div class="description">
+          <h2>Anduril Industries - Manufacturing Design Engineer</h2>
+          <p>May 2022 - Aug 2022</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page">
+    <h1 class="contentheading">
+      CWRU Baja Design: Rear Upright
+    </h1>
+    <div class="bajacontentcontainer">
+      <p class="start">
+        I completely redesigned our teams rear-upright for manufacturability 
+        using a first-principles approach. I effectively cut the part's size 
+        in half while maintaining all suspension-related requirements, 
+        reducing machining time, stock cost, and overall
+        weight.
+      </p>
+      <div class="columncontainer">
+        <div class="leftcolumn">
+          <img src="assets/baja1.webp" alt="Axis and Vise fixture">
+          <p>
+            This part was a 4th axis fixture along with a
+            vise fixture. CAM was written in HSM and
+            machine time was reduced from ~8 hrs to
+            4.
+          </p>
+          <img src="assets/baja2.webp" alt="rear upright">
+        </div>
+        <div class="rightcolumn">
+          <img class="smaller" src="assets/baja3.webp" alt="nonlinear dynamic simulation">
+          <p>
+            Nonlinear dynamic simulation of the entire assembly. In order to get more
+            accurate results of various wheel impacts, and properly model the bearing stress
+            on the upright, I ran FEA on the entire assembly instead of the individual part.
+          </p>
+          <img src="assets/baja4.webp" alt="rear upright">
+          <p>
+            The upright integrates with the rest of the rear suspension assembly, and is
+            designed to have zero camber gain over travel.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page">
+    <h1 class="contentheading">CWRU Baja Design: Front Halfshafts</h1>
+    <div class="halfshaftscontainer">
+      <img src="assets/halfshaft1.png" alt="half shaft" class="firsthalfshaftimg">
+      <p class="firsthalfshaftparagraph">
+        I designed our front half-shaft assembly for the 2022 season as well. It’s validated to take up to 2500 in-lbs with
+        a factor of safety of 1.5 or higher across the board. Using materials like Grade 5 Titanium and 7075-T6, our yokes
+        are able to achieve max angles of 57 degrees. It also uses bonded carbon fiber shafts in order keep the weight of
+        the entire shaft just under a pound.
+      </p>
+      <img class="secondhalfshaftimg" src="assets/halfshaft2.webp" alt="half shaft closeup">
+      <p class="secondhalfshaftparagraph">
+        Because we use a double-wishbone suspension,
+        our shafts have to plunge inwards. We use ANSI
+        B.92 Splines to achieve this while also transferring
+        our torque requirement.
+      </p>
+      <img class="thirdhalfshaftimg" src="assets/halfshaft3.png" alt="half shaft">
+      <div class="thirdhalfshaftparagraph">
+        <img class="fourthhalfshaftimg" src="assets/halfshaft4.png" alt="half shaft">
+        <p class="center">
+          I also designed custom fixturing to bond these half-shafts in an oven to meet our
+          torque transfer requirements.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <h1 class="contentheading">Other Projects</h1>
+    <div class="horizontalscroll">
+      <div class="contentcontainer">
+        <div class="project">
+          <img src="assets/halfshaft2.webp" alt="example img">
+          <div class="projectcontent">
+            <h2>project heading</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore 
+              magna aliqua. Ut enim ad minim veniam, quis nostrud 
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+              consequat. Duis aute irure dolor in reprehenderit in 
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in 
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="assets/baja3.webp" alt="example img">
+          <div class="projectcontent">
+            <h2>project heading</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore 
+              magna aliqua. Ut enim ad minim veniam, quis nostrud 
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+              consequat. Duis aute irure dolor in reprehenderit in 
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in 
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="assets/baja4.webp" alt="example img">
+          <div class="projectcontent">
+            <h2>project heading</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore 
+              magna aliqua. Ut enim ad minim veniam, quis nostrud 
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+              consequat. Duis aute irure dolor in reprehenderit in 
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in 
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <br>
+            <img src="assets/halfshaft3.png" alt="example again with scroll">
+          </div>
+        </div>
+        <div class="project">
+          <img src="assets/baja3.webp" alt="example img">
+          <div class="projectcontent">
+            <h2>project heading</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore 
+              magna aliqua. Ut enim ad minim veniam, quis nostrud 
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+              consequat. Duis aute irure dolor in reprehenderit in 
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in 
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
