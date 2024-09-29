@@ -1,6 +1,6 @@
 // Array of words to cycle through
 // Jaffer change it here to add more words
-const words = ["Brain Implants", "Baja", "Cars", "Wheels"];
+const words = ["Brain Implants", "Offroad Race Cars", "World Championship Robots", "Drones", "Sewing & Patternmaking", "Clay Modeling"];
 
 function cycleWords() {
     const textChangeElements = document.querySelectorAll('.text-change');
