@@ -254,11 +254,11 @@ a:visited {
   pointer-events: none; 
 }
 
-.horizontalscroll img {
-  max-height: 300px;
-  height: 300px;
-  width: 100%;
-  object-fit: cover;   
+
+img#im1 {
+  padding: 2em 6em 0em 6em;
+  height:auto;
+
 }
 
 .contentcontainer{
@@ -272,9 +272,9 @@ a:visited {
 .project {
   display: flex;
   flex-direction: column;
-  min-width: 960px;
-  width: 960px;
-  height: 600px;
+  min-width: 1100px;
+  width: 1100px;
+  height: 687px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.125);
   border-radius: 5px;
   background-color: #000000;
