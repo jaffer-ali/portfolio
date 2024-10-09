@@ -1,6 +1,6 @@
 // Array of words to cycle through
 // Jaffer change it here to add more words
-const words = ["Brain Implants", "Offroad Race Cars", "World Championship Robots", "Drones", "Sewing & Patternmaking", "Clay Modeling"];
+const words = ["Brain Implants", "Offroad Race Cars", " a Haptic Control Interface", "CNCing Pumpkin", "Collaborating with Wintergatan"];
 
 function cycleWords() {
     const textChangeElements = document.querySelectorAll('.text-change');
@@ -13,7 +13,7 @@ function cycleWords() {
             
             setTimeout(() => {
                 wordIndex = (wordIndex + 1) % words.length;
-                element.textContent = words[wordIndex];
+                element.textContent = "\t" + words[wordIndex];
                 
                 element.style.opacity = 1;
             }, 500); 

@@ -57,11 +57,11 @@ a:visited {
 }
 
 .page {
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 .page2 {
-  min-height: 90vh;
+  min-height: 60vh;
 }
 
 #page1 {
@@ -70,7 +70,7 @@ a:visited {
   background-image: url('assets/landingpage.png');
   background-position: left bottom; 
   background-repeat: no-repeat; 
-  background-size: 50%;
+  background-size: 110vh;
 }
 
 #page1 h1 {
@@ -99,11 +99,11 @@ a:visited {
 .page2text {
   width: 60%;
   float: left;
-  padding: 3rem;
+  padding-left:3em;
 }
 
 .page3text {
-  padding: 3rem 5rem;
+  padding: 2rem 2rem;
   display: flex;
   gap: 1rem;
 }
@@ -120,18 +120,25 @@ a:visited {
   font-size: .9em;
 }
 .contentheading {
-  padding: 3rem 0 0 2rem;
+  padding: 3rem 0 1rem 2rem;
 }
 
 .page2 .contentheading {
-  padding: 5rem 0 0 2rem;
+  padding: 3rem 0 0 1rem;
+}
+
+#page3 {
+  padding-top:30px;
 }
 
 #simulation {
-  max-width: 40%;
+  max-width: 60%;
   max-height: 90vh;
-  float: right;
+  float: left;
+  padding-left: 3em;
+  margin-left: 3em;
   padding: 0em 1em;
+  position: relative;
 }
 
 .bajacontentcontainer {
@@ -178,10 +185,15 @@ a:visited {
 .smaller {
   max-width: 65% !important;
 }
+.designlanding{
+  display: block;
+  overflow: auto;
 
+}
 .halfshaftscontainer {
   display: grid;
   padding: 2rem 5rem;
+  padding-right: 10em;
   grid-template-columns: .13fr .23fr .6fr 1fr;
   grid-template-rows: .5fr 0.3fr 1fr 1fr;
   grid-template-areas: 
@@ -260,11 +272,11 @@ a:visited {
 .project {
   display: flex;
   flex-direction: column;
-  min-width: 600px;
-  width: 400px;
-  height: 700px;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
+  min-width: 960px;
+  width: 960px;
+  height: 600px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
   background-color: #000000;
   color: #e6e6e6;
   overflow: auto;
@@ -272,7 +284,6 @@ a:visited {
 
 .projectcontent {
   padding: 1rem;
-  height: 100%;
 }
 
 .company {
@@ -280,6 +291,7 @@ a:visited {
   flex-direction: row;
   gap: 1em;
   padding-bottom: 1em;
+  width:200px;
   flex-basis: 100px; /* Set the same width for all items */
   flex-grow: 1; /* Allows the items to grow equally if there's extra space */
 }
@@ -307,7 +319,7 @@ a:visited {
     max-width: 100%;
     max-height: 100%;
     margin: 0 auto;
-    float: none;
+    float: left;
   }
 }
 
